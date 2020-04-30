@@ -1,0 +1,12 @@
+# Provide environment variables for a Typescript application
+
+This example demonstrates the simplest way to provide environment specific variables
+for a Typescript application.
+
+* The file `src/global.vars` provides a default configuration
+* The file `tsconfig.json` provides the typescript configuration
+* Running a `tsc` command starts the transpilation and the generated javascript files will be placed in the `src` dir
+* The `ìndex.html` imports the javascript files. The config file `global-vars.js` needs to be imported before the `index.js` file.
+* When deploying the application you can replace the `global-vars.js` file with a environment specific file which defines the settings for your given environment.
+
+ 
